@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>B+etreeIndex</title>
+<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+</head>
+<body>
+<div id="page">
+    <p>B<sup>+</sup>TreeIndex</p>
+    <form id="searchForm" >
+ <!--当一组表单元素放到 <fieldset> 标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。-->     
+            <input id="s" type="text" />
+            <input type="button" value="Search" id="searchButton" onclick="getDatas()"/>        
+            <div id="searchInContainer">
+                <select id="root"></select> 
+                <input type="radio" name="way" value="key" id="searchKey" checked />
+                <label for="searchkey">关键字查询</label>
+                <input type="radio" name="way" value="type" id="searchType" />
+                <label for="searchType">类型查询</label>              
+            </div>  
+            <ul class="icons">
+                <li class="music" title="搜索音乐类型" >音乐</li>
+                <li class="images" title="搜索图片类型" >图片</li>
+                <li class="doc" title="搜索文档类型" >文档</li>
+                <li class="videos" title="搜索视频类型" >视频</li>                                                
+            </ul>  
+            <div class="ix">
+            <input type="button" name="save" value="保存索引" id="save" onclick="saveIndex()"/>
+            是否重建索引:<input type="radio" name="reindex" value="Yes" id="i1">
+            <label for="i1">是</label>
+            <input type="radio"  name="reindex"  value="No"  id="i2" checked>
+            <label for="i2">否</label>            
+        </div> 
+                 
+    </form>
+    <div id="Cover" class="Cover" >
+       <img src="img/load.gif" id="pic"/>
+    </div> 
+</div>
+<div id="popDiv">
+    <table id="content-table">
+        <tbody id="content_table_body">
+        </tbody>
+    </table>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<div style="text-align:center;clear:both">
+</div>
+</body>
+</html>

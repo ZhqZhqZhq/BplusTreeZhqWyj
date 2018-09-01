@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="BplusTree_search_WyjZhq">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="java-output-path" value="/BplusTree_search_WyjZhq/build/classes"/>
+        <property name="context-root" value="BplusTree_search_WyjZhq"/>
+    </wb-module>
+</project-modules>

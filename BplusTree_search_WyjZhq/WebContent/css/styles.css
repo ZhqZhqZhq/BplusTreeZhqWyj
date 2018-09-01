@@ -1,0 +1,203 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-size:13px;
+	color:#eee;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url('../img/ssh.jpg') fixed center center no-repeat;
+	background-size: cover;
+	width: 100%; 
+}
+
+#page{
+	/* The main container div */
+	width:620px;
+	margin:100px auto 0;
+
+}
+
+p{
+	font-family:  sans-serif;
+	text-indent:150px; /*文本快中首行文本的缩进*/
+	overflow:hidden;/*当内容溢出元素框时发生的事情*/
+    font-size: 60px;
+	height:90px;
+}
+
+#searchForm{
+	/* The search form. */
+	border: 1px solid rgb(218, 215, 197);
+	padding:70px 0 0 50px;
+	margin:80px 0;
+	position:relative;                                                                             
+	-moz-border-radius:16px;/*支持各种浏览器*/
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	height:150px;
+}
+
+#s{
+	/* The search text box. */
+	
+	border:none;
+	color:#888888;
+	background:url("../img/searchBox.png") no-repeat;
+	
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:15px;
+	height:36px;
+	line-height:36px;
+	margin-right:12px;
+	outline:medium none;
+	padding:0 0 0 35px;
+	text-shadow:1px 1px 0 white;/*向文本设置阴影*/
+	width:385px;
+}
+
+/* The UL that contains the search type icons */
+
+.icons{
+	list-style:none;
+	margin:17px 0 0 335px;
+	height:19px;
+	position:relative;
+}
+
+.icons li{
+	background:url("../img/icons.png") no-repeat;
+	float:left;
+	height:19px;
+	text-indent:-9999px;
+	cursor:pointer;
+	margin-right:5px;
+}
+
+/* Styling each icon */
+
+li.music{ width:15px;}
+li.music.active,
+li.music:hover{ background-position:left bottom;} /*设置图像的起始位置*/
+
+li.images{ width:22px; background-position:-18px 0;}
+li.images.active,
+li.images:hover{ background-position:-18px bottom;}
+
+li.doc{ width:14px; background-position:-44px 0;}
+li.doc.active,
+li.doc:hover{ background-position:-44px bottom;}
+
+li.videos{ width:17px; background-position:right 0;}
+li.videos.active,
+li.videos:hover{ background-position:right bottom;}
+
+span.arrow{
+	/* The little arrow that moves below the icons */
+	
+	width:11px;
+	height:6px;
+	margin:21px 0 0 5px;
+	position:absolute;
+	background:url('../img/arrow.png') no-repeat;
+	left:0;
+}
+
+
+/* The submit button */
+
+
+#searchButton{
+	background:url('../img/buttons.png') no-repeat;
+	width:83px;
+	height:36px;
+	text-indent:-9999px;
+	overflow:hidden;
+	text-transform:uppercase;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+
+#searchButton:hover{
+	background-position:left bottom;
+}
+
+#root{
+
+	width:42px;
+	height:22px;
+	line-height: 40px;
+	border-radius: 5px;
+	
+}
+
+
+#searchInContainer{
+	float:left;
+	margin-top:12px;
+	width:330px;
+}
+
+label{
+	color:#DDDDDD;
+	cursor:pointer;
+	font-size:15px;
+	position:relative;
+	right:-2px;
+	top:1px;
+	margin-right:10px;
+	margin-top:160px;
+	white-space:nowrap;
+	/*float:left;*/
+}
+
+input[type=radio]{
+	cursor:pointer;
+	position:relative;
+	right:-2px;
+	top:2px;
+	/*float:left;*/
+}
+#save{
+	background-color: #DDDDDD;
+	border-radius:3px;
+	width:68px;
+	height:22px;
+	border:1px solid rgb(151, 151, 151);
+	margin-right:3px;
+	outline:none;
+}
+.ix{
+	
+	color:#DDDDDD;
+	margin-top:10px;
+	font-size:15px;
+}
+.Cover{
+	background:rgb(63, 60, 60);
+	opacity:0.5;
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:100;
+	text-align:center;
+
+}
+#pic{
+	position:relative;
+	margin-top:180px;
+}
+#content_table_body{
+	color:white;	
+	font-family:sans-serif;
+	font-size:18px;
+	width:100%;
+	padding-left:10px;
+	opacity:0.8;
+}
